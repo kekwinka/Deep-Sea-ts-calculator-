@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#031c35" />
+  <title>Океан глубин</title>
+</head>
+
+<body>
+  <div class="ocean" aria-hidden="true">
+    <div class="sunshaft"></div>
+    <div class="water-glow"></div>
+    <div class="bubble-field" id="bubbleField"></div>
+    <div class="distant-reef reef-a"></div>
+    <div class="distant-reef reef-b"></div>
+  </div>
+
+  <main class="calculator-shell">
+    <section class="glass" aria-label="Калькулятор">
+      <div class="glass-shine"></div>
+      <div class="top-ornament"><span></span><i></i><span></span></div>
+
+      <section class="screen">
+        <div class="screen-aura"></div>
+        <div class="plankton-field" id="planktonField" aria-hidden="true"></div>
+        <div class="equation" id="equation">Пусть начнётся магия</div>
+        <div class="readout" id="readout" aria-live="polite">0</div>
+        <div class="reaction-scene" id="reactionScene" aria-hidden="true">
+
+          <div class="sea-creature" id="seaCreature"></div>
+          <div class="flash" id="flash"></div>
+          <div class="pearl-stage" id="pearlStage">
+            <div class="pearl" id="pearl">
+              <div class="pearl-lustre"></div>
+              <div class="pearl-highlight"></div>
+              <div class="pearl-sheen"></div>
+              <div class="pearl-crack"></div>
+              <div class="pearl-value" id="pearlValue"></div>
+            </div>
+            <div class="result-operands" aria-label="Исходное выражение"></div>
+          </div>
+          <div class="scene-error" id="sceneError"></div>
+        </div>
+        <div class="screen-bottom"><span>✦</span><span id="hint">Выбери цифры и создай свой ответ</span><span>✦</span>
+        </div>
+      </section>
+
+      <section class="keypad" aria-label="Клавиатура калькулятора">
+        <span class="key-spacer" aria-hidden="true"></span>
+        <button class="key utility" data-action="clear" aria-label="Очистить"></button>
+        <button class="key utility" data-action="backspace" aria-label="Удалить"></button>
+        <button class="key operator" data-op="sqrt" aria-label="Режим квадратного корня" aria-pressed="false"></button>
+        <button class="key operator" data-op="divide" aria-label="Деление"></button>
+
+        <span class="key-spacer" aria-hidden="true"></span>
+        <button class="key number" data-digit="7" aria-label="Семь"></button>
+        <button class="key number" data-digit="8" aria-label="Восемь"></button>
+        <button class="key number" data-digit="9" aria-label="Девять"></button>
+        <button class="key operator" data-op="multiply" aria-label="Умножение"></button>
+
+        <span class="key-spacer" aria-hidden="true"></span>
+        <button class="key number" data-digit="4" aria-label="Четыре"></button>
+        <button class="key number" data-digit="5" aria-label="Пять"></button>
+        <button class="key number" data-digit="6" aria-label="Шесть"></button>
+        <button class="key operator" data-op="subtract" aria-label="Вычитание"></button>
+
+        <span class="key-spacer" aria-hidden="true"></span>
+        <button class="key number" data-digit="1" aria-label="Один"></button>
+        <button class="key number" data-digit="2" aria-label="Два"></button>
+        <button class="key number" data-digit="3" aria-label="Три"></button>
+        <button class="key operator" data-op="add" aria-label="Сложение"></button>
+
+        <button class="key number zero" data-digit="0" aria-label="Ноль"></button>
+        <button class="key number decimal" data-action="decimal" aria-label="Десятичная точка"></button>
+        <button class="key utility sign" data-action="sign" aria-label="Сменить знак"></button>
+        <button class="key operator power" data-op="power" aria-label="Возведение в степень"></button>
+        <button class="key equals" data-action="equals" aria-label="Вычислить" aria-disabled="true"></button>
+      </section>
+      <div class="bottom-glow"></div>
+    </section>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
